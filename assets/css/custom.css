@@ -1,0 +1,38 @@
+/* コードの色分けを控えめにする（Hextra 標準の GitHub 風配色を上書き）
+   - 太字をやめる
+   - 日本語などをエラー扱いした赤ハイライトを消す
+   - 色は Xcode の配色を参考にした落ち着いたもの */
+
+.hextra-code-block pre {
+  font-weight: 400;
+}
+
+/* 等幅フォントに日本語の字形がないため、日本語はヒラギノ（細め）で表示する */
+code, pre, kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", monospace;
+}
+
+.highlight .chroma * {
+  font-weight: normal !important;
+  font-style: normal;
+}
+
+/* ライト */
+.highlight .chroma .err { color: inherit; background-color: transparent; }
+.highlight .chroma :is(.k, .kc, .kd, .kn, .kp, .kr, .ow) { color: #9b2393; }
+.highlight .chroma .kt { color: #0b4f79; }
+.highlight .chroma :is(.s, .s1, .s2, .sa, .sb, .sc, .sd, .se, .sh, .si, .sx) { color: #c41a16; }
+.highlight .chroma :is(.m, .mi, .mf, .mh, .mo, .il) { color: #1c00cf; }
+.highlight .chroma :is(.c, .c1, .cm, .cs, .ch, .cp) { color: #707f8c; font-style: italic; }
+.highlight .chroma :is(.nf, .nb, .fm) { color: #326d74; }
+.highlight .chroma :is(.n, .nx, .nv, .o, .p) { color: inherit; }
+
+/* ダーク */
+.dark .highlight .chroma .err { color: inherit; background-color: transparent; }
+.dark .highlight .chroma :is(.k, .kc, .kd, .kn, .kp, .kr, .ow) { color: #fc5fa3; }
+.dark .highlight .chroma .kt { color: #5dd8ff; }
+.dark .highlight .chroma :is(.s, .s1, .s2, .sa, .sb, .sc, .sd, .se, .sh, .si, .sx) { color: #fc6a5d; }
+.dark .highlight .chroma :is(.m, .mi, .mf, .mh, .mo, .il) { color: #d0bf69; }
+.dark .highlight .chroma :is(.c, .c1, .cm, .cs, .ch, .cp) { color: #7f8c98; font-style: italic; }
+.dark .highlight .chroma :is(.nf, .nb, .fm) { color: #67b7a4; }
+.dark .highlight .chroma :is(.n, .nx, .nv, .o, .p) { color: inherit; }
