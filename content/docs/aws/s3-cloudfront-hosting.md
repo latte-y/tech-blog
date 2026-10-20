@@ -254,5 +254,5 @@ aws cloudfront create-invalidation --distribution-id <distribution-id> --paths "
 ## 次にやること
 
 1. GitHub にリポジトリを作る
-2. OIDC と GitHub Actions で、push したら自動でデプロイされるようにする
+2. OIDC と GitHub Actions で、push したら自動でデプロイされるようにする → [GitHub Actions＋OIDCで自動デプロイする](../github-actions-oidc-deploy/)
 3. ここまでコンソールで作ったものを Terraform に取り込む（`import` ブロック）
